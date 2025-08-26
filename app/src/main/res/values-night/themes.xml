@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Splash Theme (Material 3) -->
+    <style name="Theme.CheckList.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Полноэкранный режим -->
+
+    </style>
+
+</resources>

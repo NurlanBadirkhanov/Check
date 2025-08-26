@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.check.checklist.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/checklistFragment"
+        android:name="com.check.checklist.ui.home.ChecklistFragment"
+        android:label="Checklist"
+        tools:layout="@layout/fragment_checklist" />
+
+
+
+
+    <fragment
+        android:id="@+id/newFragment"
+        android:name="com.check.checklist.ui.home.NewFragment"
+        android:label="NewFragment" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.check.checklist.ui.History.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.check.checklist.ui.Settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

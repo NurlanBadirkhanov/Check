@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    tools:context=".ui.SplashActivity">
+
+    <!-- мягкое неоновое свечение -->
+    <ImageView
+        android:id="@+id/glow"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/glow_neon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- сама галочка -->
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/ic_check_neon"
+        app:layout_constraintBottom_toBottomOf="@id/glow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/glow" />
+
+    <!-- заголовок -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:letterSpacing="0.02"
+        android:shadowColor="@color/neon_lime_dimmed"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:text="CheckList"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/check"
+        app:layout_goneMarginTop="12dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
